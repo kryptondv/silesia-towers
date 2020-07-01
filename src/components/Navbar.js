@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../assets/img/logo.png';
-import { FaAlignRight } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
+import Hamburger from './Hamburger';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,21 +23,20 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             />
           </Link>
-          <button className="navbar__nav-btn" onClick={handleToggle}>
-            <FaAlignRight className="nav-icon" />
-          </button>
+          <Hamburger handleToggle={handleToggle} isOpen={isOpen}/>
+          
         </div>
         <ul
           className={`navbar__nav-list ${isOpen && 'navbar__nav-list--show-nav'}`}
         >
           <li onClick={() => setIsOpen(false)}>
-            <Link className="navbar__nav-link" to="/">
-              Home
+            <Link className="navbar__nav-link" to="/mieszkania">
+              Mieszkania
             </Link>
           </li>
           <li onClick={() => setIsOpen(false)}>
-            <Link className="navbar__nav-link" to="/mieszkania">
-              Mieszkania
+            <Link className="navbar__nav-link" to="/kontakt">
+              Kontakt
             </Link>
           </li>
         </ul>

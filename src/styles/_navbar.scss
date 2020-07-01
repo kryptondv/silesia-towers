@@ -10,17 +10,11 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
     height: 3.5rem;
-  }
-
-  &__nav-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
   }
 
   &__nav-list {
