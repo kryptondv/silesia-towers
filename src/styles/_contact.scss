@@ -1,0 +1,20 @@
+.contact {
+  margin-top: 3rem;
+
+  &__item {
+  display: block;
+  color: $mainWhite;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+  
+  }
+  
+  &__icon {
+    margin-right: 1rem;
+  }
+
+}
+
