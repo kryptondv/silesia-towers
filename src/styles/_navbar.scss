@@ -63,10 +63,6 @@
 
 @media screen and (min-width: 768px) {
   .navbar {
-    &__nav-btn {
-      display: none;
-    }
-
     &__nav-list {
       height: auto;
       display: flex;

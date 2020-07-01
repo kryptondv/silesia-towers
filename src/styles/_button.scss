@@ -1,0 +1,24 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: $mainSpacing;
+  color: $mainWhite;
+  background: $primaryColor;
+  padding: 0.5rem 1rem;
+  transition: $mainTransition;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;;
+  font-weight: 300;
+
+  &:hover {
+    background: darken($primaryColor, 10%);
+    color: $mainWhite;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+}
