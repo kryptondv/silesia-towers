@@ -1,10 +1,13 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 const Apartments = () => {
   return (
-    <div>
-      Mieszkania
-    </div>
+    <>
+      <Hero bg="apartments">
+        mieszkania
+      </Hero>
+    </>
   )
 }
 

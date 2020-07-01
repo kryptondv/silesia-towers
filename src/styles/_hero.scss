@@ -1,0 +1,15 @@
+.hero {
+  min-height: calc(100vh - 85px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--main {
+    background: url("../assets/img/bg.jpg") center 10%/cover no-repeat;
+  }
+
+  &--apartments {
+    background: url("../assets/img/apBg.jpg") center center/cover no-repeat;
+    min-height: 50vh;
+  }
+}
