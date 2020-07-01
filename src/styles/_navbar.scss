@@ -1,0 +1,95 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: $mainBlack;;
+  z-index: 1;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__nav-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__nav-list {
+    height: 0;
+    overflow: hidden;
+    transition: $mainTransition;
+    list-style-type: none;
+
+    &--show-nav {
+      height: 100px;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: $mainWhite;
+    transition: $mainTransition;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: $mainSpacing;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+
+
+
+
+.nav-icon {
+  font-size: 1.5rem;
+  color: $primaryColor;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    &__nav-btn {
+      display: none;
+    }
+
+    &__nav-list {
+      height: auto;
+      display: flex;
+    }
+
+    &__nav-link {
+      margin-left: 5rem;
+      padding: 0.5rem 0;
+    }
+  }
+
+  
+  .nav-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+}
