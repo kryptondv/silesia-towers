@@ -18,6 +18,7 @@ const Contact = () => {
               kryptondevpl@gmail.com
             </a>
           </div>
+          
         </Banner>
       </Hero>
     </>

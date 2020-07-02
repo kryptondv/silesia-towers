@@ -1,19 +1,19 @@
 .btn {
   display: inline-block;
   text-decoration: none;
-  letter-spacing: $mainSpacing;
-  color: $mainWhite;
-  background: $primaryColor;
+  letter-spacing: $spacing-main;
+  color: $color-white;
+  background: $color-primary;
   padding: 0.5rem 1rem;
-  transition: $mainTransition;
+  transition: $transition-main;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 5px;;
   font-weight: 300;
 
   &:hover {
-    background: darken($primaryColor, 10%);
-    color: $mainWhite;
+    background: darken($color-primary, 10%);
+    color: $color-white;
   }
 }
 

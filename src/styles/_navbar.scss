@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: $mainBlack;;
+  background: $color-black;
   z-index: 1;
 
   &__header {
@@ -21,7 +21,7 @@
   &__nav-list {
     height: 0;
     overflow: hidden;
-    transition: $mainTransition;
+    transition: $transition-main;
     list-style-type: none;
 
     &--show-nav {
@@ -33,33 +33,19 @@
     display: block;
     text-decoration: none;
     padding: 1rem 0;
-    color: $mainWhite;
-    transition: $mainTransition;
+    color: $color-white;
+    transition: $transition-main;
     text-align: center;
     font-size: 1rem;
-    letter-spacing: $mainSpacing;
+    letter-spacing: $spacing-main;
     text-transform: uppercase;
     font-weight: 300;
 
     &:hover {
-      color: $primaryColor;
+      color: $color-primary;
     }
   }
 }
-
-
-
-
-
-.nav-icon {
-  font-size: 1.5rem;
-  color: $primaryColor;
-}
-
-
-
-
-
 
 @media screen and (min-width: 768px) {
   .navbar {
