@@ -8,7 +8,7 @@ import FeaturedApartments from '../components/FeaturedApartments';
 const Home = () => {
   return (
     <>
-      <Hero bg="main">
+      <Hero page="main">
         <Banner
           title="Silesia Towers"
           subtitle="Przystań w sercu miasta"

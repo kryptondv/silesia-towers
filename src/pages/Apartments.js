@@ -7,7 +7,7 @@ import Banner from '../components/Banner';
 const Apartments = () => {
   return (
     <>
-      <Hero bg="apartments">
+      <Hero page="apartments">
         <Banner title="Oferta" subtitle="Wybierz swoje mieszkanie">
           <Link to="/" className="btn">
             Powrót do strony głównej

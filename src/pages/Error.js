@@ -6,7 +6,7 @@ import Banner from '../components/Banner';
 const Error = () => {
   return (
     <>
-      <Hero bg="main">
+      <Hero page="main">
         <Banner title="404" subtitle="Nie znaleziono strony">
           <Link to="/" className="btn">
             Powrót do strony głównej

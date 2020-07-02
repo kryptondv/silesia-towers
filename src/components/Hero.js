@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Hero = ({ bg, children }) => {
+const Hero = ({ page, children, customBg }) => {
   return (
-    <header className={`hero hero--${bg}`}>
+    <header 
+      className={`hero hero--${page}`} 
+      style={customBg && {background: `url('${customBg}') center/cover no-repeat`}}>
       {children}
     </header>
   )
