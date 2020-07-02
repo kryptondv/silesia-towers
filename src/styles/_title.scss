@@ -16,6 +16,10 @@
     height: 5px;
     margin: 0 auto;
     background: $color-primary;
+
+    &--alternate {
+      background: $color-black;
+    }
   }
 }
 

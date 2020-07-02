@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router} from 'react-router-dom';
+import { GlobalProvider } from './context/GlobalState';
 
 
 import App from './components/App';
@@ -9,10 +10,13 @@ import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
+  
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <GlobalProvider>
+      <Router>
+        <App />
+      </Router>
+    </GlobalProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

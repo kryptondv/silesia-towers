@@ -1,0 +1,87 @@
+.apartment {
+  box-shadow: $box-shadow-light;
+  transition: $transition-main;
+
+  &:hover {
+    box-shadow: $box-shadow-dark;
+
+    .apartment__img {
+      opacity: 0.3;
+      transform: scale(1.1);
+    }
+
+    .apartment__btn {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+
+    .apartment__size-container {
+        opacity: 0;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    transition: $transition-main;
+  }
+
+  &__size-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.3rem 0.6rem 0.5rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    transition: $transition-main;
+  }
+  
+  &__size {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: $color-white;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+
+  &__name {
+    background: rgba(255,255,255, .8);
+    // background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: $color-black;
+    // color: $color-white;
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+}
+
+

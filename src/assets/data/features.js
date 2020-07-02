@@ -15,7 +15,7 @@ export default [
     icon: <FaCertificate />,
     title: 'Przyjazne warunki',
     info:
-      'Wszystkie mieszkania posiadają duże balkony od strony południowej.  Idealne na letnie popołudnia.',
+      'W ofercie mieszkania z dużymi balkonami od strony południowej. Idealne na letnie popołudnia.',
   },
   {
     id: 2,
