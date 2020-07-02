@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../context/GlobalState';
 import Hero from '../components/Hero';
@@ -10,6 +10,10 @@ const SingleApartment = ({ match }) => {
   const apartment = apartments.find(apartment => apartment.slug === slug);
   const { name, floor, price, size, balcony, images, description } = apartment;
   const [mainImg, setMainImg] = useState(images[0])
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
