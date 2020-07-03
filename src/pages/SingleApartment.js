@@ -8,7 +8,7 @@ const SingleApartment = ({ match }) => {
   const slug = match.params.slug;
   const { apartments } = useContext(GlobalContext);
   const apartment = apartments.find(apartment => apartment.slug === slug);
-  const { name, floor, price, size, balcony, images, description } = apartment;
+  const { name, floor, rooms, price, size, balcony, images, description } = apartment;
   const [mainImg, setMainImg] = useState(images[0])
 
   useEffect(() => {
@@ -52,7 +52,8 @@ const SingleApartment = ({ match }) => {
             </p>
             <p className="details__text">pow. {size}m3</p>
             <p className="details__text">piętro: {floor}</p>
-            <p className="details__text">Balkon: {balcony ? 'Tak' : 'Nie'}</p>
+            <p className="details__text">pokoje: {rooms}</p>
+            <p className="details__text">balkon: {balcony ? 'tak' : 'nie'}</p>
           </article>
         </div>
       </section>

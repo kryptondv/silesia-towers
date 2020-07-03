@@ -1,6 +1,7 @@
 .apartment {
   box-shadow: $box-shadow-light;
   transition: $transition-main;
+  animation: fadeIn .3s ease;
 
   &:hover {
     box-shadow: $box-shadow-dark;

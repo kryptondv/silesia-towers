@@ -1,0 +1,24 @@
+.apartament-list {
+  padding: 5rem 0;
+  background: darken($color-primary, 10%);
+}
+.apartament-list-container {
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 30px;
+}
+
+@media screen and (min-width: 776px) {
+  .apartament-list-container {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .apartament-list-container {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}

@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import { FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
 
 
-const Contact = () => {
+const Contact = ({history}) => {
   return (
     <>
       <Hero page="main">
@@ -17,8 +17,8 @@ const Contact = () => {
               <FaRegEnvelope className="contact__icon" />
               kryptondevpl@gmail.com
             </a>
+          <button className="btn contact__btn" onClick={history.goBack}>Powrót</button>
           </div>
-          
         </Banner>
       </Hero>
     </>

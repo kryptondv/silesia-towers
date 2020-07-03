@@ -28,6 +28,7 @@ export default [
       price: 430000,
       size: 66,
       floor: 5,
+      rooms: 3,
       balcony: true,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -40,6 +41,7 @@ export default [
       price: 356000,
       size: 52,
       floor: 2,
+      rooms: 2,
       balcony: true,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -49,9 +51,10 @@ export default [
       id: '03',
       name: 'Mieszkanie 42',
       slug: 'mieszkanie-42',
-      price: 453000,
-      size: 68,
+      price: 473000,
+      size: 71,
       floor: 4,
+      rooms: 4,
       balcony: true,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -64,6 +67,7 @@ export default [
       price: 420000,
       size: 68,
       floor: 5,
+      rooms: 3,
       balcony: false,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -76,6 +80,7 @@ export default [
       price: 287000,
       size: 30,
       floor: 1,
+      rooms: 1,
       balcony: false,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -88,6 +93,7 @@ export default [
       price: 420000,
       size: 58,
       floor: 3,
+      rooms: 3,
       balcony: true,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -100,6 +106,7 @@ export default [
       price: 370000,
       size: 56,
       floor: 3,
+      rooms: 2,
       balcony: false,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -112,6 +119,7 @@ export default [
       price: 390000,
       size: 62,
       floor: 1,
+      rooms: 3,
       balcony: false,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -124,6 +132,7 @@ export default [
       price: 461000,
       size: 70,
       floor: 4,
+      rooms: 4,
       balcony: true,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -136,6 +145,7 @@ export default [
       price: 320000,
       size: 38,
       floor: 1,
+      rooms: 1,
       balcony: false,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -148,6 +158,7 @@ export default [
       price: 497000,
       size: 71,
       floor: 5,
+      rooms: 3,
       balcony: true,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
@@ -160,6 +171,7 @@ export default [
       price: 420000,
       size: 45,
       floor: 2,
+      rooms: 2,
       balcony: false,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat leo sed arcu vehicula, id ultrices justo tincidunt. In rhoncus arcu fringilla, porta leo vel, blandit enim. Fusce consequat id justo a placerat. Mauris gravida sodales elit, vel posuere ligula aliquam sit amet. Etiam aliquet viverra turpis id tincidunt. Nam euismod tempor bibendum. Phasellus fringilla magna in sapien blandit, eu.',
