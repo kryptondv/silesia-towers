@@ -7,7 +7,7 @@ import { FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
 const Contact = ({history}) => {
   return (
     <>
-      <Hero page="main">
+      <Hero page="contact">
         <Banner subtitle="Kontakt">
           <div className="contact">
             <a className="contact__item" href="tel:5551234567">

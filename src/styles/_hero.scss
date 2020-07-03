@@ -10,6 +10,11 @@
     background: url("../assets/img/bg.jpg") center 10%/cover no-repeat;
   }
 
+  &--contact {
+    background: url("../assets/img/bg.jpg") center 10%/cover no-repeat;
+    min-height: calc(100vh - 172px);
+  }
+
   &--apartments {
     background: url("../assets/img/apBg.jpg") center center/cover no-repeat;
     min-height: 50vh;

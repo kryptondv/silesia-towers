@@ -1,0 +1,27 @@
+.main-footer {
+  padding: 2rem;
+  position: relative;
+
+  &__text {
+    color: $color-white;
+    letter-spacing: $spacing-main;
+    text-align: center;
+  }
+
+  &__back-to-top {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    background: transparent;
+    color: #656565;
+    border: none;
+    font-size: 1.1rem;
+    padding: .5rem;
+    outline: none;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+    
+  }
+}
+

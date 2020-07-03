@@ -7,6 +7,7 @@ import SingleApartment from '../pages/SingleApartment';
 import Error from '../pages/Error';
 import Navbar from './Navbar';
 import Contact from '../pages/Contact';
+import Footer from './Footer';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/kontakt" component={Contact} />
         <Route component={Error} />
       </Switch>
+      <Footer />
     </>
   );
 }
