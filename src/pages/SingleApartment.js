@@ -3,21 +3,45 @@ import { Link } from 'react-router-dom';
 import { GlobalContext } from '../context/GlobalState';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
+import Modal from '../components/Modal';
 
 const SingleApartment = ({ match }) => {
   const slug = match.params.slug;
   const { apartments } = useContext(GlobalContext);
   const apartment = apartments.find(apartment => apartment.slug === slug);
-  const { name, floor, rooms, price, size, balcony, images, description } = apartment;
-  const [mainImg, setMainImg] = useState(images[0])
+  const {
+    name,
+    floor,
+    rooms,
+    price,
+    size,
+    balcony,
+    images,
+    description,
+  } = apartment;
+  const [mainImg, setMainImg] = useState(images[0]);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const onImgClick = image => {
+    setMainImg(image);
+    setModalOpen(true);
+  };
+
   return (
     <>
-      <Hero page="single-apartment" customBg={mainImg}>
+      {modalOpen && (
+        <Modal
+          images={images}
+          mainImg={mainImg}
+          setMainImg={setMainImg}
+          setModalOpen={setModalOpen}
+        />
+      )}
+      <Hero page="single-apartment" customBg={images[0]}>
         <Banner title={name} size="small">
           <Link to="/mieszkania" className="btn">
             Wszystkie mieszkania
@@ -29,7 +53,7 @@ const SingleApartment = ({ match }) => {
           {images.map((item, index) => (
             <img
               className="single-apartment__image"
-              onClick={() => setMainImg(item)}
+              onClick={() => onImgClick(item)}
               key={index}
               src={item}
               alt={name}
