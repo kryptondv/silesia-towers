@@ -25,6 +25,8 @@
 
   &__image {
     width: 100%;
+    transition: $transition-main;
+    cursor: pointer;
 
     &--selected {
         filter: brightness(45%);
@@ -57,8 +59,6 @@
     &__image {
       width: 50%;
       margin: .5rem;
-      transition: $transition-main;
-      cursor: pointer;
     }
 
     &__btn {
