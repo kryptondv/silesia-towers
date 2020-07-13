@@ -11,6 +11,18 @@
   grid-column-gap: 30px;
 }
 
+.empty-search {
+  background: darken($color-primary, 10%);
+  color: $color-white;
+  text-align: center;
+  padding: 4rem 2rem;
+  &__title {
+    font-weight: 400;
+    font-size: 1.3rem;
+    animation: fadeIn 0.3s ease-out;
+  }
+}
+
 @media screen and (min-width: 776px) {
   .apartament-list-container {
     width: 90vw;

@@ -7,7 +7,9 @@ const ApartmentList = () => {
   if (filteredApartments.length === 0) {
     return (
       <div className="empty-search">
-        <h3>Żadne mieszkania nie spełniają podanych kryteriów</h3>
+        <h3 className="empty-search__title">
+          Żadne mieszkania nie spełniają podanych kryteriów
+        </h3>
       </div>
     );
   }

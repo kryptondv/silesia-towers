@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Hero = ({ page, children, customBg }) => {
   return (
@@ -7,7 +7,7 @@ const Hero = ({ page, children, customBg }) => {
       style={customBg && {background: `url('${customBg}') center/cover no-repeat`}}>
       {children}
     </header>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
