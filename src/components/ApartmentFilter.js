@@ -20,7 +20,7 @@ const ApartmentFilter = () => {
 
   // get unique options JSX for select element
   const roomOptions = getUniqueOptions(apartments, 'rooms');
-  const floorOptions = getUniqueOptions(apartments, 'rooms');
+  const floorOptions = getUniqueOptions(apartments, 'floor');
 
   return (
     <section className="filter-container">
