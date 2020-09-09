@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/context';
-import Apartment from './Apartment';
+import Apartment from './apartment/Apartment';
 
 const ApartmentList = () => {
   const { filteredApartments } = useContext(GlobalContext);

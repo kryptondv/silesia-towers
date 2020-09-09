@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/context';
 import { Link } from 'react-router-dom';
 import getThreeRandomNumbers from '../functions/getThreeUniqueRandomNumbers';
 import Title from './Title';
-import Apartment from './Apartment';
+import Apartment from './apartment/Apartment';
 
 const FeaturedApartments = () => {
   const { apartments } = useContext(GlobalContext);

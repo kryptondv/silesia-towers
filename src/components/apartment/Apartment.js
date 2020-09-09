@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import defaultImg from '../assets/img/ap-1.jpg';
+import defaultImg from '../../assets/img/ap-1.jpg';
 
 const Apartment = ({ apartment }) => {
   const { name, slug, images, size } = apartment;
