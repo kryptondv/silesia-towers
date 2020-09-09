@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import AppReducer from './AppReducer';
+import AppReducer from './reducer';
 import apartments from '../assets/data/apartments';
 
 const initialState = {
@@ -23,6 +23,7 @@ export const GlobalContext = createContext();
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
+  // filters
   const handleChange = ({ target }) => {
     dispatch({
       type: 'CHANGE_FILTER_VALUE',

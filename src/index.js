@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router} from 'react-router-dom';
-import { GlobalProvider } from './context/GlobalState';
+import { GlobalProvider } from './context/context';
 
 
 import App from './components/App';

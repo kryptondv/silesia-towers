@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalState';
+import { GlobalContext } from '../context/context';
 import { Link } from 'react-router-dom';
-import getThreeRandomNumbers from '../functions/getThreeRandomNumbers';
+import getThreeRandomNumbers from '../functions/getThreeUniqueRandomNumbers';
 import Title from './Title';
 import Apartment from './Apartment';
 
