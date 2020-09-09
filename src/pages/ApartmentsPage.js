@@ -6,7 +6,7 @@ import ApartmentFilter from '../components/ApartmentFilter';
 import ApartmentList from '../components/ApartmentList';
 
 
-const Apartments = () => {
+const ApartmentsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -26,4 +26,4 @@ const Apartments = () => {
   );
 }
 
-export default Apartments
+export default ApartmentsPage;

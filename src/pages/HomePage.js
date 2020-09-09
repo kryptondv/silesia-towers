@@ -5,7 +5,7 @@ import Banner from '../components/Banner';
 import Features from '../components/Features';
 import FeaturedApartments from '../components/FeaturedApartments';
 
-const Home = () => {
+const HomePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,4 +28,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

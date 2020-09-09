@@ -4,7 +4,7 @@ import Banner from '../components/Banner';
 import { FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
 
 
-const Contact = ({history}) => {
+const ContactPage = ({history}) => {
   return (
     <>
       <Hero page="contact">
@@ -25,4 +25,4 @@ const Contact = ({history}) => {
   );
 }
 
-export default Contact
+export default ContactPage;

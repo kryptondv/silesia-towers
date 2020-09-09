@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 
-const Error = () => {
+const ErrorPage = () => {
   return (
     <>
       <Hero page="main">
@@ -17,4 +17,4 @@ const Error = () => {
   );
 }
 
-export default Error
+export default ErrorPage;
