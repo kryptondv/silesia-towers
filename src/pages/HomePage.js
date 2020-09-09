@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Banner from '../components/banner/Banner';
 import Features from '../components/Features';
-import FeaturedApartments from '../components/FeaturedApartments';
+import FeaturedApartments from '../components/featuredApartments/FeaturedApartments';
 
 const HomePage = () => {
   useEffect(() => {

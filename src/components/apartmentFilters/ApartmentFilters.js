@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../../context/context';
-import getUniqueOptions from '../../functions/getUniqueOptions';
+import getUniqueOptions from '../../utils/getUniqueOptions';
 import Title from '../Title';
 import Filter from './filter/Filter';
 import Checkbox from './filter/Checkbox';

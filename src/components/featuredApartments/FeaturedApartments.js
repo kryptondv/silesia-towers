@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/context';
+import { GlobalContext } from '../../context/context';
 import { Link } from 'react-router-dom';
-import getThreeRandomNumbers from '../functions/getThreeUniqueRandomNumbers';
-import Title from './Title';
-import Apartment from './apartment/Apartment';
+import getThreeUniqueRandomNumbers from '../../utils/getThreeUniqueRandomNumbers';
+import Title from '../Title';
+import Apartment from '../apartment/Apartment';
 
 const FeaturedApartments = () => {
   const { apartments } = useContext(GlobalContext);
-  const numbers = getThreeRandomNumbers(0, apartments.length - 1);
+  
+  // select 3 random apartments for the featured section
+  const numbers = getThreeUniqueRandomNumbers(0, apartments.length - 1);
   let featuredApartments = numbers.map(number => apartments[number]);
   featuredApartments = featuredApartments.map(apartment => (
     <Apartment key={apartment.id} apartment={apartment} />
