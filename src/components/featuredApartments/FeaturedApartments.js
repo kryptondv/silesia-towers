@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../../context/context';
 import { Link } from 'react-router-dom';
 import getThreeUniqueRandomNumbers from '../../utils/getThreeUniqueRandomNumbers';
-import Title from '../Title';
+import Title from '../title/Title';
 import Apartment from '../apartment/Apartment';
 
 const FeaturedApartments = () => {
