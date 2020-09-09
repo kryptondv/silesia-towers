@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import Banner from '../components/Banner';
+import Banner from '../components/banner/Banner';
 import Features from '../components/Features';
 import FeaturedApartments from '../components/FeaturedApartments';
 

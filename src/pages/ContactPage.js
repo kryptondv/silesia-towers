@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Banner from '../components/Banner';
+import Banner from '../components/banner/Banner';
 import { FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
 
 
