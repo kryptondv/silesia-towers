@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Navbar from './Navbar';
-import Footer from './Footer';
+import Footer from './footer/Footer';
 import HomePage from '../pages/HomePage';
 import ApartmentsPage from '../pages/ApartmentsPage';
 import SingleApartmentPage from '../pages/SingleApartmentPage';
