@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/hero/Hero';
 import Banner from '../components/banner/Banner';
 import { FaPhoneAlt, FaRegEnvelope } from 'react-icons/fa';
+import Contact from '../components/contact/Contact';
 
 
 const ContactPage = ({history}) => {
@@ -9,16 +10,7 @@ const ContactPage = ({history}) => {
     <>
       <Hero page="contact">
         <Banner subtitle="Kontakt">
-          <div className="contact">
-            <a className="contact__item" href="tel:5551234567">
-              <FaPhoneAlt className="contact__icon" /> +48 123 123 123
-            </a>
-            <a className="contact__item" href="mailto: kryptondevpl@gmail.com">
-              <FaRegEnvelope className="contact__icon" />
-              kryptondevpl@gmail.com
-            </a>
-          <button className="btn contact__btn" onClick={history.goBack}>Powrót</button>
-          </div>
+          <Contact history={history}/>
         </Banner>
       </Hero>
     </>

@@ -1,13 +1,13 @@
 @import './variables';
 @import './animations';
 @import './base';
+@import './button';
 @import '../components/navbar/navbar';
 @import '../components/hamburger/hamburger';
 @import '../components/hero/hero';
 @import '../components/banner/banner';
-@import './button';
-@import './contact';
-@import './title';
+@import '../components/contact/contact';
+@import '../components/title/title';
 @import '../components/features/features';
 @import '../components/featuredApartments/featured-apartments';
 @import '../components/apartment/apartment';
