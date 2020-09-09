@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Banner from '../components/Banner';
-import ApartmentFilter from '../components/ApartmentFilter';
+import ApartmentFilter from '../components/apartmentFilters/ApartmentFilters';
 import ApartmentList from '../components/ApartmentList';
 
 

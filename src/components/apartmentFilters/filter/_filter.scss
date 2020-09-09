@@ -1,23 +1,9 @@
-.filter-container {
-  padding: 5rem 0;
-  background: darken($color-primary, 30%);
-  color: $color-white;
-}
-.filter-form {
-  width: 60vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-
 .form-group {
 
   &__label {
     display: block;
-    letter-spacing: 1px;
     margin-bottom: 0.5rem;
+    letter-spacing: 1px;
 
     &--checkbox {
       margin-left: 0.5rem;
@@ -46,21 +32,5 @@
     display: flex;
     align-items: center;
     transform: translateY(15%)
-  }
-}
-
-
-
-@media screen and (min-width: 776px) {
-  .filter-form {
-    width: 70vw;
-  }
-
-  
-}
-@media screen and (min-width: 992px) {
-  .filter-form {
-    width: 95vw;
-    max-width: 1170px;
   }
 }

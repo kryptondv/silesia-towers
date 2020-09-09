@@ -12,7 +12,8 @@
 @import './featured-apartments';
 @import '../components/apartment/apartment';
 @import '../components/singleApartment/single_apartments';
-@import './apartment-filter';
+@import '../components/apartmentFilters/apartment-filters';
+@import '../components/apartmentFilters/filter/filter';
 @import './apartment-list';
 @import './footer';
 @import './modal';
