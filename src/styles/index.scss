@@ -2,8 +2,8 @@
 @import './animations';
 @import './base';
 @import './navbar';
-@import './hamburger';
-@import './hero';
+@import '../components/hamburger/hamburger';
+@import '../components/hero/hero';
 @import '../components/banner/banner';
 @import './button';
 @import './contact';

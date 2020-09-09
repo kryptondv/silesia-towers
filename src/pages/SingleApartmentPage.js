@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { GlobalContext } from '../context/context';
-import Hero from '../components/Hero';
+import Hero from '../components/hero/Hero';
 import Banner from '../components/banner/Banner';
 import Modal from '../components/Modal';
 import SingleApartment from '../components/singleApartment/SingleApartment';

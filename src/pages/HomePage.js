@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Hero from '../components/Hero';
+import Hero from '../components/hero/Hero';
 import Banner from '../components/banner/Banner';
 import Features from '../components/features/Features';
 import FeaturedApartments from '../components/featuredApartments/FeaturedApartments';
