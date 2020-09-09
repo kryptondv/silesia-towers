@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { GlobalContext } from '../context/context';
 import Hero from '../components/hero/Hero';
 import Banner from '../components/banner/Banner';
-import Modal from '../components/Modal';
+import Modal from '../components/modal/Modal';
 import SingleApartment from '../components/singleApartment/SingleApartment';
 
 const SingleApartmentPage = ({ match }) => {

@@ -1,6 +1,5 @@
 .modal {
   position: fixed;
-  background: rgba(0,0,0,.8);
   top: 0;
   right: 0;
   bottom: 0;
@@ -11,16 +10,33 @@
   justify-content: center;
   height: 100%;
   padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+
+  @media (orientation: landscape) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__main-image {
     width: 100%;
     margin-bottom: 1rem;
+
+    @media (orientation: landscape) {
+      width: 70%;
+    }
   }
 
   &__images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+
+    @media (orientation: landscape) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 
   &__image {
@@ -28,50 +44,27 @@
     transition: $transition-main;
     cursor: pointer;
 
+    @media (orientation: landscape) {
+      width: 50%;
+      margin: 0.5rem;
+    }
+
     &--selected {
-        filter: brightness(45%);
-      }  
+      filter: brightness(45%);
+    }
   }
 
   &__btn {
     display: block;
     margin: 1rem auto;
-  }
-}
 
-@media (orientation: landscape) {
-  .modal {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-
-    &__main-image {
-      width: 70%;
-    }
-
-    &__images {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-    }
-
-    &__image {
-      width: 50%;
-      margin: .5rem;
-    }
-
-    &__btn {
+    @media (orientation: landscape) {
       position: absolute;
       bottom: 4%;
     }
   }
-}
 
-@media screen and (min-width: 768px) {
-  .modal {
+  @media screen and (min-width: 768px) {
     padding: 10%;
   }
 }
-
-
