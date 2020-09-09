@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/context';
-import Apartment from './apartment/Apartment';
+import { GlobalContext } from '../../context/context';
+import Apartment from '../apartment/Apartment';
 
 const ApartmentList = () => {
   const { filteredApartments } = useContext(GlobalContext);
@@ -14,8 +14,8 @@ const ApartmentList = () => {
     );
   }
   return (
-    <section className="apartament-list">
-      <div className="apartament-list-container">
+    <section className="apartment-list">
+      <div className="apartment-list-container">
         {filteredApartments.map(apartment => (
           <Apartment key={apartment.id} apartment={apartment} />
         ))}

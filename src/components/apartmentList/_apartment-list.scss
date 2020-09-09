@@ -1,36 +1,33 @@
-.apartament-list {
+.apartment-list {
   padding: 5rem 0;
   background: darken($color-primary, 10%);
 }
-.apartament-list-container {
-  width: 80vw;
-  margin: 0 auto;
+.apartment-list-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 30px;
+  width: 80vw;
+  margin: 0 auto;
+
+  @media screen and (min-width: 776px) {
+    width: 90vw;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 95vw;
+    max-width: 1170px;
+  }
 }
 
 .empty-search {
-  background: darken($color-primary, 10%);
-  color: $color-white;
-  text-align: center;
   padding: 4rem 2rem;
+  color: $color-white;
+  background: darken($color-primary, 10%);
+  text-align: center;
   &__title {
     font-weight: 400;
     font-size: 1.3rem;
     animation: fadeIn 0.3s ease-out;
-  }
-}
-
-@media screen and (min-width: 776px) {
-  .apartament-list-container {
-    width: 90vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .apartament-list-container {
-    width: 95vw;
-    max-width: 1170px;
   }
 }
