@@ -2,16 +2,16 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
   padding: 0.75rem 1rem;
   background: $color-black;
-  z-index: 1;
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
   }
 
   &__logo {
@@ -24,6 +24,11 @@
     transition: $transition-main;
     list-style-type: none;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      height: auto;
+    }
+
     &--show-nav {
       height: 100px;
     }
@@ -31,42 +36,33 @@
 
   &__nav-link {
     display: block;
-    text-decoration: none;
     padding: 1rem 0;
     color: $color-white;
-    transition: $transition-main;
-    text-align: center;
     font-size: 1rem;
-    letter-spacing: $spacing-main;
-    text-transform: uppercase;
     font-weight: 300;
+    letter-spacing: $spacing-main;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: $transition-main;
 
     &:hover {
       color: $color-primary;
     }
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    &__nav-list {
-      height: auto;
-      display: flex;
-    }
-
-    &__nav-link {
+    @media screen and (min-width: 768px) {
       margin-left: 5rem;
       padding: 0.5rem 0;
     }
   }
+}
 
-  
-  .nav-container {
-    max-width: 1170px;
-    margin: 0 auto;
+.nav-container {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
   }
-  
 }

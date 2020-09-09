@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import logo from '../assets/img/logo.png';
+import logo from '../../assets/img/logo.png';
 
 import { Link } from 'react-router-dom';
-import Hamburger from './hamburger/Hamburger';
+import Hamburger from '../hamburger/Hamburger';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
