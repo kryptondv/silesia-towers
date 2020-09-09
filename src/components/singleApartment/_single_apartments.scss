@@ -17,12 +17,26 @@
     -webkit-tap-highlight-color: transparent; 
   }
 
+  &__images,
+  &__info {
+    @media screen and (min-width: 992px) {
+      width: 95vw;
+      max-width: 1170px;
+    }
+  }
+
   &__info {
     display: grid;
     grid-template-columns: 1fr;
     width: 80vw;
     margin: 2rem auto;
     color: $color-white;
+
+    @media screen and (min-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+    }
   }
 }
 
@@ -45,50 +59,4 @@
   margin: 0 .2rem 0 .8rem;
   font-weight: 700;
   font-size: 2rem;
-}
-
-
-.info h3,
-.info h6 {
-  letter-spacing: $spacing-main;
-}
-
-.info h6 {
-  font-weight: 300;
-}
-.room-extras {
-  width: 80vw;
-  margin: 0 auto 3rem auto;
-}
-.room-extras h6 {
-  text-transform: capitalize;
-  letter-spacing: $spacing-main;
-}
-.extras {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  grid-column-gap: 2rem;
-  grid-row-gap: 1rem;
-  list-style-type: none;
-}
-@media screen and (min-width: 992px) {
-  .single-apartment {
-
-    &__images,
-    &__info {
-      width: 95vw;
-      max-width: 1170px;
-    }
-
-    &__info {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 2rem;
-    }
-  }
-
-
-  .info {
-    padding-left: 3rem;
-  }
 }
